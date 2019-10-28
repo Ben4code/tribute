@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
+
+body{
+    background: #000;
+}
+
+.bg-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bg-img{
+    border-radius: 50%;
+}
+span.cta {
+    border: 1px solid #fff;
+    padding: .4rem 1rem;
+    border-radius: 20px;
+}
+a:link, a:visited{
+    color: #fff;
+}
+.bg-title{
+    color: #fff;
+    font-family: 'Pinyon Script', cursive;
+}
+.showcase{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0 3.2rem;
+    background: rgba(0,0,0, .5);
+}
+.tributeList{
+    color: #fff;
+    margin-top: 5rem;
+}
+.tribute{
+    color: #111;
+}
+.tribute_meta{
+    font-weight: bold;
+    font-style: italic;
+}
+.hack{
+    color: black;
+}
+
+
+/* About */
+.about-title{
+    position: absolute;
+    bottom: 10px;
+    left: 17%;
+}
+.about-text{
+    color: #fff;
+    margin: 3rem 1rem;
+}
