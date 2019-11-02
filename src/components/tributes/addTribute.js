@@ -48,7 +48,7 @@ const AddTribute = ({ user, addHandler }) => {
                     user === null ?
                         (
                             <div className="notAuth">
-                                <Link to="/signup" className="btn btn-small red">Register to publish a tribute.</Link>
+                                <Link to="/signup" className="btn btn-small red">Register to publish a tribute</Link>
                             </div>
                         )
                         :

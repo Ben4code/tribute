@@ -1,26 +1,55 @@
+/* CSS Resets */
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
 
 body{
     background: #000;
+    font-size: 1.5rem;
+}
+#nav{
+    padding: 0 3rem;
 }
 
+#nav a{
+    font-size: 1.5rem;
+}
+#nav span a{
+    font-size: 1.5rem;
+}
 .bg-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
 .bg-img{
     border-radius: 50%;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
 }
 span.cta {
     border: 1px solid #fff;
     padding: .4rem 1rem;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 a:link, a:visited{
     color: #fff;
+}
+.bg-text{
+    width: 40vw;
+
 }
 .bg-title{
     color: #fff;
@@ -35,16 +64,30 @@ a:link, a:visited{
     padding: 0 3.2rem;
     background: rgba(0,0,0, .5);
 }
-.tributeList{
+.showcase img{
+    object-fit: cover;
+}
+.tributeLayout{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     color: #fff;
     margin-top: 5rem;
+    
 }
+.tributeList{
+    width: 65%;
+}
+
+.tributeSidebar{
+    width: 25%;
+}
+
 .tribute{
     color: #111;
 }
 .tribute_meta{
     font-weight: bold;
-    /* font-style: italic; */
 }
 .hack{
     color: black;
@@ -53,21 +96,65 @@ a:link, a:visited{
     font-weight: 400;
 }
 
+@media only screen and (max-width: 800px){
+    html{
+        font-size: 50%;
+    }
+    .tributeList{
+        width: 65%;
+    }
+    
+    .tributeSidebar{
+        width: 30%;
+    }
+    .bg-text{
+        font-size: 1.1rem;
+    }
+    
+}
+@media only screen and (max-width: 650px){
+    html{
+        font-size: 44%;
+    }
+    .tributeLayout{
+        display: block;
+    }
+    .tributeList{
+        width: 100%;
+    }
+    
+    .tributeSidebar{
+        width: 100%;
+    }
+    .bg-text{
+        font-size: .2rem;
+    }
+}
+@media only screen and (max-width: 540px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* About */
 .about-title{
     position: absolute;
-    bottom: 10px;
+    bottom: 1rem;
     left: 17%;
 }
 .about-text{
     color: #fff;
     margin: 3rem 1rem;
 }
-
+.about_page{
+    color: #fff;
+}
 /* SignIn */
 .form{
     background-color: rgba(0, 0, 0, .8);
-    border-radius: 5px;
+    border-radius: .5rem;
     padding: 6rem 4rem;
     width: 600px;
     z-index: 2;
@@ -78,7 +165,7 @@ a:link, a:visited{
 }
 .form_2{
     background-color: rgba(27, 24, 24, 0.8);
-    border-radius: 5px;
+    border-radius: .5rem;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -97,19 +184,19 @@ input, textarea{
 }
 .textarea{  
     overflow:hidden;
-    padding:10px;
-    width: 500px;
-    height: 150px;
-    font-size:14px;
-    margin:25px auto;
+    padding:1rem;
+    width: 80%;
+    height: 15rem;
+    font-size: 1.4rem;
+    margin: 2.5rem auto;
     display:block;
-    border-radius:10px;
-    border:6px solid #556677;
+    border-radius:1rem;
+    border: 0.6rem solid #556677;
     background-color: rgba(0, 0, 0, 0.07);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
     color: #111;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    padding: 5px 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: .5rem .8rem;
     transition: background-color 0.2s ease 0s;
   }
   .textarea:focus {
@@ -118,8 +205,9 @@ input, textarea{
 }
 .notAuth{
     position: absolute;
-    top: 35%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #fff;
     padding: 1rem;
     z-index: 3;
@@ -152,7 +240,7 @@ input[type=password]:not(.browser-default):focus:not([readonly])
 }
 .confirm{
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #2196f3;
 }
@@ -160,3 +248,9 @@ input[type=password]:not(.browser-default):focus:not([readonly])
  a.chosen{
     color: #2196f3;
 }
+
+
+/*  */
+/* @media only screen and (max-width: 1000px){
+
+} */

@@ -28,8 +28,8 @@ const About = () => {
             </div>
 
             <div className="container">
-                <div className="row tributeList">
-                    <div className="col m8">
+                <div className="tributeLayout">
+                    <div className="tributeList">
                         <h3>Biography</h3>
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
@@ -51,7 +51,7 @@ const About = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
                         </div>
                     </div>
-                    <div className="col m3 offset-m1">
+                    <div className="tributeSidebar">
                         <Sidebar />
                     </div>
                 </div>

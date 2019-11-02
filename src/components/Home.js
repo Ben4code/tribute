@@ -32,17 +32,18 @@ const Home = (props) => {
             </div>
           </div>
         </div>
+
         <div className="container">
-          <div className="row tributeList">
-            <div className="col m8">
+          <div className="tributeLayout">
+            <div className="tributeList">
               <TributeList history={props.history}/>
             </div>
-            <div className="col m3 offset-m1">
+            <div className="tributeSidebar">
               <Sidebar />
             </div>
           </div>
         </div>
-    
+
       </Layout>
     )
 }

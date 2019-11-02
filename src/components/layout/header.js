@@ -5,6 +5,8 @@ import Angel_2 from '../../images/Angel_2.png'
 import firebase from '../../config/firebase'
 import AuthContext from '../context/authContext/authContext'
 
+
+
 const Header = () => {
   const authContext = useContext(AuthContext);
   const { user, setUser } = authContext;
@@ -18,16 +20,15 @@ const Header = () => {
       .catch(err => console.log(err))
   }
 
-
   return (
     <nav id="nav" className="transparent z-depth-0">
-      <div className="nav-wrapper container">
-        <NavLink to="" className="brand-logo">
+      <div className="nav-wrapper ">
+        <NavLink to="" className="logo">
           <img src={Angel_1} alt="angel" width="40" />
-          Tributes to Daddy {' '}
+          <span>Tributes to Daddy {' '}</span>
           <img src={Angel_2} alt="angel" width="40" />
         </NavLink>
-        <ul id="nav-mobile" className="right">
+        <ul className="right">
           <li><NavLink exact activeClassName="chosen" to="">Home</NavLink></li>
           <li><NavLink exact activeClassName="chosen" to="/about">About</NavLink></li>
           <li><NavLink exact activeClassName="chosen" to="/donate" > <span className="cta">Donate to family</span> </NavLink></li>
@@ -49,6 +50,7 @@ const Header = () => {
               )
           }
         </ul>
+        
       </div>
     </nav>
   )

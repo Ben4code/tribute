@@ -29,8 +29,8 @@ const Donate = () => {
             </div>
 
             <div className="container">
-                <div className="row tributeList">
-                    <div className="col m8">
+                <div className="tributeLayout">
+                    <div className="tributeList">
                         <h3 style={{ opacity: '0' }}>Fidelis Obioha</h3>
                         <div className="center-align">
                             <p>We are sad that to announce that daddy passed away peacefully on the 20th of October 2019.</p>
@@ -45,14 +45,13 @@ const Donate = () => {
                                 <div className="card horizontal grey lighten-3">
                                     <div className="card-image">
                                         <img src={Daddy} alt="daddy1" />
-                                        {/* <a className="btn-floating halfway-fab waves-effect waves-light red"><i className="fa fa-plus"></i></a> */}
                                     </div>
                                     <DonateCard />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col m3 offset-m1">
+                    <div className="tributeSidebar">
                         <Sidebar />
                     </div>
                 </div>

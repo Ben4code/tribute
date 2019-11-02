@@ -64,7 +64,6 @@ const DonateCard = () => {
             }
         })
             .catch(err => console.log(err))
-
     }
 
     const cancelPay = () => {
@@ -81,7 +80,6 @@ const DonateCard = () => {
                 </div>
                 <form onSubmit={submitHandler}>
                     <div className="card-content black-text donation">
-
                         {payButton.spinner && (<div className="spinner"><Spinner /></div>)}
                         {
                             !payButton.pay ? (
@@ -96,18 +94,13 @@ const DonateCard = () => {
                                     </div>
                                     <br />
                                     <div className="input-field">
-                                        
-                                        
                                         <i className={`fa fa-${selectValue.currency} prefix blue-text`}>{selectValue.currency === 'NGN' && selectValue.symbol }</i>
                                         <NumFormat thousandSeparator={true} onValueChange={inputHandler} value={input.donation} />
-                                        
-                                        
                                     </div>
                                 </>
                             ) : (<p className="confirm">You have agreed to pay {selectValue.symbol}{input.donation}</p>)
                         }
                     </div>
-
                     <div className="card-action">
                         {
                             !payButton.pay ? (<button style={{ width: '100%' }} type="submit" className="btn btn-large blue">Donate</button>)
@@ -119,7 +112,6 @@ const DonateCard = () => {
                                     </>
                                 )
                         }
-
                     </div>
                 </form>
             </div>
