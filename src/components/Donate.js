@@ -33,12 +33,12 @@ const Donate = () => {
                     <div className="tributeList">
                         <h3 style={{ opacity: '0' }}>Fidelis Obioha</h3>
                         <div className="center-align">
-                            <p>We are sad that to announce that daddy passed away peacefully on the 20th of October 2019.</p>
-                            <p>A service celebrating his life will be held at Enugu Nigeria at his residence on Friday 22nd November 201 at 15:00.</p>
+                            <p>We are sad that to announce that daddy passed away peacefully in October 2019.</p>
+                            <p>A service celebrating his life will be held at Enugu Nigeria at his residence on Friday 22nd November 2019 at 15:00.</p>
                             <p>Kindly join us afterwards for refreshments as we share some of his memories.</p>
 
                             <p>Donations in his memory may be sent using the checkout service below.</p>
-                            <p>Nnaemeka, Chris, Katherine and Jesse.</p>
+
                         </div>
                         <div className="row">
                             <div className="col m12">

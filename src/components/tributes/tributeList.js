@@ -28,8 +28,8 @@ const TributeList = (history) => {
 
     const addTributeHandler = (input) => {
         const newDoc = {
-            authorId: user.handle,
-            tribute: input,
+            authorId: input.userName,
+            tribute: input.tributeText,
             createdAt: firebase.firestore.Timestamp.fromDate(new Date())
         }
         db.collection("tributes").add({...newDoc})

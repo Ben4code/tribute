@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+
 
 
 const AddTribute = ({ user, addHandler }) => {
-    const [input, setInput] = useState({ tributeText: '' })
+    const [input, setInput] = useState({userName: '',  tributeText: '' })
     const [errors, setError] = useState({ errorMsg: '' })
 
 
@@ -22,11 +22,11 @@ const AddTribute = ({ user, addHandler }) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if (input.tributeText.trim() === '') {
+        if (input.userName.trim() === '' | input.tributeText.trim() === '') {
             return showAlert("Fields must not be empty")
         }
-        addHandler(input.tributeText);
-        setInput({tributeText: ''})
+        addHandler(input);
+        setInput({userName: '',  tributeText: '' });
     }
 
     return (
@@ -35,26 +35,16 @@ const AddTribute = ({ user, addHandler }) => {
             <form className="form_2" onSubmit={submitHandler}>
                 <div className="form_element">
                     <h5 className="center-align">Write A Tribute </h5>
-                    <div className="input-field ">
-                        <textarea className="textarea" placeholder="Enter tribute" name="tributeText" 
-                            disabled={user === null ? true : false} onChange={inputHandler} value={input.tributeText}></textarea>
+                    <div className="input-field">
+                        <input className="inputText" placeholder="Enter name" type="text" name="userName" onChange={inputHandler} value={input.userName} />
+                    </div>
+                    <div className="input-field">
+                        <textarea className="textarea" placeholder="Enter tribute" name="tributeText" onChange={inputHandler} value={input.tributeText}></textarea>
                     </div>
                     <div className="input-field center-align">
-                        <input disabled={user === null ? true : false} type="submit" value="Publish" className="btn btn-small  light-blue darken-1" />
+                        <input type="submit" value="Publish" className="btn btn-small  light-blue darken-1" />
                     </div>
                 </div>
-
-                {
-                    user === null ?
-                        (
-                            <div className="notAuth">
-                                <Link to="/signup" className="btn btn-small red">Register to publish a tribute</Link>
-                            </div>
-                        )
-                        :
-                        ''
-                }
-
             </form>
 
         </div>

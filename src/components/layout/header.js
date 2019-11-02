@@ -1,24 +1,24 @@
-import React, { useContext } from "react"
+import React from "react"
 import { NavLink } from "react-router-dom"
 import Angel_1 from '../../images/Angel_1.png'
 import Angel_2 from '../../images/Angel_2.png'
-import firebase from '../../config/firebase'
-import AuthContext from '../context/authContext/authContext'
+// import firebase from '../../config/firebase'
+// import AuthContext from '../context/authContext/authContext'
 
 
 
 const Header = () => {
-  const authContext = useContext(AuthContext);
-  const { user, setUser } = authContext;
+  // const authContext = useContext(AuthContext);
+  //const { user, setUser } = authContext;
 
-  const logoutLink = () => {
-    firebase.auth().signOut()
-      .then(() => {
-        localStorage.removeItem('myValueInLocalStorage');
-        setUser(null)
-      })
-      .catch(err => console.log(err))
-  }
+  // const logoutLink = () => {
+  //   firebase.auth().signOut()
+  //     .then(() => {
+  //       localStorage.removeItem('myValueInLocalStorage');
+  //       setUser(null)
+  //     })
+  //     .catch(err => console.log(err))
+  // }
 
   return (
     <nav id="nav" className="transparent z-depth-0">
@@ -31,8 +31,8 @@ const Header = () => {
         <ul className="right">
           <li><NavLink exact activeClassName="chosen" to="">Home</NavLink></li>
           <li><NavLink exact activeClassName="chosen" to="/about">About</NavLink></li>
-          <li><NavLink exact activeClassName="chosen" to="/donate" > <span className="cta">Donate to family</span> </NavLink></li>
-          {
+          <li><NavLink exact activeClassName="chosen" to="/donate" > <span className="cta">Fundraise</span> </NavLink></li>
+          {/* {
             user !== null
               ?
               (
@@ -48,7 +48,7 @@ const Header = () => {
                   <li><NavLink activeClassName="chosen" to="/signin">Login</NavLink></li>
                 </>
               )
-          }
+          } */}
         </ul>
         
       </div>
