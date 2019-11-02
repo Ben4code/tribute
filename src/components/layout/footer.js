@@ -1,11 +1,11 @@
 import React from 'react'
 
-const SignOut = () => {
+const footer = () => {
     return (
         <div>
-            
+            <p> &copy; 2019 </p>
         </div>
     )
 }
 
-export default SignOut
+export default footer

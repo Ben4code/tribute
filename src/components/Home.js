@@ -6,7 +6,8 @@ import BgImg from '../images/candles.jpg'
 import AcademicImg from '../images/academic_new.png'
 
 
-const Home = () => {
+const Home = (props) => {
+  
     return (
         <Layout>
         <div id="showcase" style={{
@@ -34,7 +35,7 @@ const Home = () => {
         <div className="container">
           <div className="row tributeList">
             <div className="col m8">
-              <TributeList />
+              <TributeList history={props.history}/>
             </div>
             <div className="col m3 offset-m1">
               <Sidebar />
