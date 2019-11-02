@@ -3,7 +3,10 @@ import firebase, { db } from '../../config/firebase'
 import TributeItem from './tributeItem'
 import AuthContext from '../context/authContext/authContext'
 import AddTribute from './addTribute'
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
+// toast.configure();
 
 const TributeList = (history) => {
     const authContext = useContext(AuthContext);
@@ -34,6 +37,7 @@ const TributeList = (history) => {
         }
         db.collection("tributes").add({...newDoc})
         .then(function(docRef) {
+            // toast('Tribute was posted successfully! Thank you.', { type: 'success' })
             setTributes([...tributes, {...newDoc}]);
             window.location.reload()
         })
@@ -44,7 +48,7 @@ const TributeList = (history) => {
 
     return (
         <div className="">
-
+            {/* <ToastContainer /> */}
             <h3 className="center-align">Tributes</h3>
             <div>
                 <AddTribute user={user} addHandler={addTributeHandler}/>

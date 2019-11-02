@@ -24,9 +24,9 @@ const Header = () => {
     <nav id="nav" className="transparent z-depth-0">
       <div className="nav-wrapper ">
         <NavLink to="" className="logo">
-          <img src={Angel_1} alt="angel" width="40" />
+          <img className="angel" src={Angel_1} alt="angel" width="40" />
           <span>Tributes to Daddy {' '}</span>
-          <img src={Angel_2} alt="angel" width="40" />
+          <img className="angel" src={Angel_2} alt="angel" width="40" />
         </NavLink>
         <ul className="right">
           <li><NavLink exact activeClassName="chosen" to="">Home</NavLink></li>
