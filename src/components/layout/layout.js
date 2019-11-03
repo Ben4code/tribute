@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./header"
+import Footer from './footer'
 import "./layout.css"
 
 
@@ -13,9 +14,8 @@ const Layout = ({ children }) => {
       <Header/>
       <div>
         <main>{children}</main>
-        <footer className="footer">
-          © {new Date().getFullYear()}, Built with {` `} React</footer>
       </div>
+      <Footer/>
     </>
   )
 }

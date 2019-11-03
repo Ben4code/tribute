@@ -28,26 +28,17 @@ const About = () => {
             <div className="container">
                 <div className="tributeLayout">
                     <div className="tributeList">
-                        <h3>Biography</h3>
-                        <div>
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
-                        </div>
-
+                        <h3 className="about_sub">Biography</h3>
                         <div className="row">
-                            <div className="col m7">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
+                            <p className="top_p">Fidelis was born and raised in Imo state. He attended Bishop Shanahan College Orlu before travelling to the United Kingdom where he obtained his doctorate. </p>
+                            <div className="col m7 about_p">
+                                <p> He returned to Nigeria and began working as a lecturer at various universities including the University of Nigeria untill he became a United Nations volunteer to different African countries like South Africa and Zambia. </p>
+                                <p>He is survived by his loving wife, four children and five grand children.</p>
+                                <p>He is also published author and professor in the field of Radiation Medicine.</p>
                             </div>
                             <div className="col m5">
                                 <img src={OldPic} alt="oldpic" className="responsive-img" />
                             </div>
-                        </div>
-
-
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
                         </div>
                     </div>
                     <div className="tributeSidebar">

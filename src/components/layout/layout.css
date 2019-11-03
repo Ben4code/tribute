@@ -111,6 +111,18 @@ a:link, a:visited{
 .about_page{
     color: #fff;
 }
+.about_sub{
+    color: #2196f3;
+}
+.about_p{
+    line-height: 3rem;
+}
+.about_p p{
+    margin-bottom: 3rem;
+}
+.top_p{
+    padding: 0 .75rem;
+}
 /* SignIn */
 .form{
     background-color: rgba(0, 0, 0, .8);
@@ -196,6 +208,17 @@ input[type=password]:not(.browser-default):focus:not([readonly])
 
  a.chosen{
     color: #2196f3;
+}
+
+.footer{
+    background: #2196f3;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 5rem;
+}
+.footer span{
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 800px){
