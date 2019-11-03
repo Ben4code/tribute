@@ -30,7 +30,7 @@ const About = () => {
                     <div className="tributeList">
                         <h3>Biography</h3>
                         <div>
-                            <p>Prof Fidelis was born on old Anambra state. His studied ay</p>
+                            
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero quas perspiciatis nam repudiandae molestias nihil atque optio, repellendus aut ab suscipit odit dolorem eaque modi esse saepe eligendi dolore magnam porro. Quos sint sequi assumenda dolorum rerum. Iste natus molestiae voluptates quibusdam qui! Itaque quo architecto obcaecati placeat? Nisi.</p>
                         </div>
 
