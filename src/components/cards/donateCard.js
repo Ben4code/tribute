@@ -98,7 +98,7 @@ const DonateCard = () => {
                                         <NumFormat thousandSeparator={true} onValueChange={inputHandler} value={input.donation} />
                                     </div>
                                 </>
-                            ) : (<p className="confirm">You have agreed to pay {selectValue.symbol}{input.donation}</p>)
+                            ) : (<p className="confirm">You have agreed to donate {selectValue.symbol}{input.donation}</p>)
                         }
                     </div>
                     <div className="card-action">

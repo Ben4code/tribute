@@ -31,7 +31,7 @@ const Header = () => {
         <ul className="right">
           <li><NavLink exact activeClassName="chosen" to="">Home</NavLink></li>
           <li><NavLink exact activeClassName="chosen" to="/about">About</NavLink></li>
-          <li><NavLink exact activeClassName="chosen" to="/donate" > <span className="cta">Fundraise</span> </NavLink></li>
+          <li><NavLink exact activeClassName="chosen" to="/donate" > <span className="cta">Donations</span> </NavLink></li>
           {/* {
             user !== null
               ?
