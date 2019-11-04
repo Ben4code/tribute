@@ -28,7 +28,6 @@ const About = () => {
             <div className="container">
                 <div className="tributeLayout">
                     <div className="tributeList">
-                        <h3 className="about_sub">Biography</h3>
                         <div className="row">
                             <p className="top_p">Fidelis was born and raised in Imo state. He attended Bishop Shanahan College Orlu before travelling to the United Kingdom where he obtained his doctorate. </p>
                             <div className="col m7 about_p">

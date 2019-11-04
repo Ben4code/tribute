@@ -33,9 +33,9 @@ const Sidebar = () => {
                 <h5 className="blue-text">Service of Songs</h5>
                 <p>Service of songs will be held at All Saints Church Bletchley, Milton Keynes Buckinghamshire, MK3 3AN, on the 16th of November at 1pm.</p>
                 <h5 className="blue-text">Wake Keeping Service</h5>
-                <p>There will be a Wake Keeping service on the 21th on November, 2019 at his residence.</p>
+                <p>There will be a Wake Keeping service on the 21st on November, 2019 at his residence.</p>
                 <h5 className="blue-text">Burial Ceremony</h5>
-                <p>Burial ceremont will be on 29th November, 2019, at his hometown.</p>
+                <p>Burial ceremony will be on 29th November, 2019, at his hometown.</p>
             </div>
             
             <div className="card-panel">
