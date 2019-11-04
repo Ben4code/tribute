@@ -107,7 +107,7 @@ const DonateCard = () => {
                                 :
                                 (
                                     <>
-                                        <StripeCheckOut stripeKey="pk_test_kmq63vJ1YfiAITdXazf0HINU00thhLs3UO" token={tokenHandler} amount={input.donation * 100} currency={selectValue.currency} />
+                                        <StripeCheckOut stripeKey="pk_live_CLNFXgwJ2WPtdRtQABfxpcln00rHPaYcN7" token={tokenHandler} amount={input.donation * 100} currency={selectValue.currency} />
                                         <button className="btn btn-small red right" onClick={cancelPay}>Back</button>
                                     </>
                                 )
