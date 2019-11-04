@@ -32,7 +32,7 @@ const About = () => {
                             <p className="top_p">Fidelis was born and raised in Imo state. He attended Bishop Shanahan College Orlu before travelling to the United Kingdom where he obtained his doctorate. </p>
                             <div className="col m7 about_p">
                                 <p> He returned to Nigeria and began working as a lecturer at various universities including the University of Nigeria untill he became a United Nations volunteer to different African countries like South Africa and Zambia. </p>
-                                <p>He is survived by his loving wife, four children and five grand children.</p>
+                                <p>He is survived by his loving wife, four children and four grand children.</p>
                                 <p>He is also published author and professor in the field of Radiation Medicine.</p>
                             </div>
                             <div className="col m5">
